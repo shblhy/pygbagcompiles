@@ -1,0 +1,8 @@
+cd pygbagblackjack
+python -m pygbag --directory=scences/blackjack --cdn=http://localhost:8001/proxy/archives/0.7/ --build main.py
+python -m pygbag --directory=scences/blackjack --cdn=http://121.36.27.11:8000/proxy/archives/0.7/ --build main.py
+rm I:\code\procfac\static\scenes\blackjack
+cp -r .\build\ I:\code\procfac\static\scenes\blackjack
+rm I:\code\source\blackjack
+mv .\build\ I:\code\source\blackjack
+用xftp上传到服务器，并放到网站目录下
